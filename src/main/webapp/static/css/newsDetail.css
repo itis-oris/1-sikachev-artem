@@ -1,0 +1,35 @@
+.news-detail-container {
+    margin: 50px auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.news-publish-date {
+    font-size: 1.1em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.news-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-detail-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.news-content {
+    color: #555;
+    line-height: 1.8;
+}

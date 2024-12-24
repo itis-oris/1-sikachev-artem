@@ -1,0 +1,75 @@
+.about-description, .donation{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.about-description h2, .donation h2{
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-description p, .donation p{
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.donation-cta ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.donation-cta ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.donation-cta ul li strong {
+    color: #333;
+}
+
+.donation-cta {
+    background-color: #ffcd82;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.donation-cta h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.donation-cta ul li {
+    color: #fff;
+}
+
+.donation-cta p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.donation-cta a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.donation-cta a:hover {
+    background-color: #ffcd82;
+}
