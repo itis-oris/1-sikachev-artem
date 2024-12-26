@@ -23,7 +23,8 @@ public class ContextListener implements ServletContextListener {
             logger.info("contextInitialized");
             sce.getServletContext().setAttribute("newsDao", new NewsDao(connection));
             sce.getServletContext().setAttribute("advertisementsDao", new AdvertisementsDao(connection));
-            sce.getServletContext().setAttribute("advertisementsCheckDao", new AdvertisementsCheckDao(connection));
+            sce.getServletContext().setAttribute("checkDao", new CheckDao(connection));
+            sce.getServletContext().setAttribute("createDao", new CreateDao(connection));
             sce.getServletContext().setAttribute("userDao", new UserDao(connection));
             sce.getServletContext().setAttribute("userService", new UserService(connection));
             sce.getServletContext().setAttribute("adminService", new AdminService());
@@ -38,7 +39,8 @@ public class ContextListener implements ServletContextListener {
         try {
             sce.getServletContext().removeAttribute("newsDao");
             sce.getServletContext().removeAttribute("advertisementsDao");
-            sce.getServletContext().removeAttribute("advertisementsCheckDao");
+            sce.getServletContext().removeAttribute("checkDao");
+            sce.getServletContext().removeAttribute("createDao");
             sce.getServletContext().removeAttribute("userDao");
             sce.getServletContext().removeAttribute("userService");
             sce.getServletContext().removeAttribute("adminService");

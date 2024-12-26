@@ -83,3 +83,180 @@
 2024-12-27 00:37:10,108 [main] INFO  util.DbWork- migration done
 2024-12-27 00:37:10,108 [main] INFO  listener.ContextListener- contextInitialized
 2024-12-27 00:37:20,571 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:42:30,545 [main] INFO  util.DbWork- start migration
+2024-12-27 00:42:30,796 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:42:30,963 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.097s)
+2024-12-27 00:42:31,001 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:42:31,008 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:42:31,030 [main] INFO  util.DbWork- migration done
+2024-12-27 00:42:31,030 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:53:39,284 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:53:49,703 [main] INFO  util.DbWork- start migration
+2024-12-27 00:53:49,848 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:53:49,994 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.090s)
+2024-12-27 00:53:50,028 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:53:50,033 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:53:50,053 [main] INFO  util.DbWork- migration done
+2024-12-27 00:53:50,053 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:53:52,064 [http-nio-8080-exec-2] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:53:58,898 [http-nio-8080-exec-8] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:57:02,746 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:57:42,469 [main] INFO  util.DbWork- start migration
+2024-12-27 00:57:42,626 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:57:42,758 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.074s)
+2024-12-27 00:57:42,789 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:57:42,796 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:57:42,816 [main] INFO  util.DbWork- migration done
+2024-12-27 00:57:42,816 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:57:44,559 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:58:34,909 [main] INFO  util.DbWork- start migration
+2024-12-27 00:58:35,080 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:58:35,243 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.098s)
+2024-12-27 00:58:35,279 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:58:35,285 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:58:35,303 [main] INFO  util.DbWork- migration done
+2024-12-27 00:58:35,303 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:58:41,773 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:59:01,316 [http-nio-8080-exec-3] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:02:21,084 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 01:02:32,042 [main] INFO  util.DbWork- start migration
+2024-12-27 01:02:32,234 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 01:02:32,387 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.089s)
+2024-12-27 01:02:32,425 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 01:02:32,432 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 01:02:32,452 [main] INFO  util.DbWork- migration done
+2024-12-27 01:02:32,452 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 01:02:34,196 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:02:56,529 [http-nio-8080-exec-9] INFO  dao.AdvertisementsDao- org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "$")
+  Позиция: 45
+2024-12-27 01:02:56,529 [http-nio-8080-exec-9] INFO  servlet.AdvertisementsCheckServlet- util.DbException: Can't get advertisement from DB.
+2024-12-27 01:07:18,544 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 01:07:29,113 [main] INFO  util.DbWork- start migration
+2024-12-27 01:07:29,263 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 01:07:29,417 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.093s)
+2024-12-27 01:07:29,448 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 01:07:29,454 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 01:07:29,471 [main] INFO  util.DbWork- migration done
+2024-12-27 01:07:29,471 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 01:07:31,115 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:08:03,168 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 01:08:13,422 [main] INFO  util.DbWork- start migration
+2024-12-27 01:08:13,562 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 01:08:13,699 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.083s)
+2024-12-27 01:08:13,731 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 01:08:13,736 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 01:08:13,755 [main] INFO  util.DbWork- migration done
+2024-12-27 01:08:13,755 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 01:08:16,112 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:08:35,507 [http-nio-8080-exec-9] INFO  dao.AdvertisementsDao- org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "{")
+  Позиция: 45
+2024-12-27 01:08:35,508 [http-nio-8080-exec-9] INFO  servlet.AdvertisementsCheckServlet- util.DbException: Can't get advertisement from DB.
+2024-12-27 01:08:38,587 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:08:39,385 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "{")
+  Позиция: 45
+2024-12-27 01:08:39,385 [http-nio-8080-exec-4] INFO  servlet.AdvertisementsServlet- util.DbException: Can't get advertisement from DB.
+2024-12-27 01:08:44,905 [http-nio-8080-exec-6] INFO  dao.AdvertisementsDao- org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "{")
+  Позиция: 45
+2024-12-27 01:08:44,905 [http-nio-8080-exec-6] INFO  servlet.AdvertisementsServlet- util.DbException: Can't get advertisement from DB.
+2024-12-27 01:13:19,992 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 01:13:30,556 [main] INFO  util.DbWork- start migration
+2024-12-27 01:13:30,692 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 01:13:30,828 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.081s)
+2024-12-27 01:13:30,857 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 01:13:30,862 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 01:13:30,877 [main] INFO  util.DbWork- migration done
+2024-12-27 01:13:30,877 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 01:13:36,778 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:13:40,220 [http-nio-8080-exec-5] INFO  dao.AdvertisementsDao- org.postgresql.util.PSQLException: ОШИБКА: столбец "принят" не существует
+  Позиция: 45
+2024-12-27 01:13:40,220 [http-nio-8080-exec-5] INFO  servlet.AdvertisementsServlet- util.DbException: Can't get advertisement from DB.
+2024-12-27 01:16:27,607 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 01:16:38,895 [main] INFO  util.DbWork- start migration
+2024-12-27 01:16:39,054 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 01:16:39,206 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.095s)
+2024-12-27 01:16:39,242 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 01:16:39,248 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 01:16:39,267 [main] INFO  util.DbWork- migration done
+2024-12-27 01:16:39,268 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 01:16:41,039 [http-nio-8080-exec-2] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:16:47,023 [http-nio-8080-exec-5] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:16:48,972 [http-nio-8080-exec-9] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:16:49,692 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:16:56,569 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:16:57,519 [http-nio-8080-exec-7] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:16:58,206 [http-nio-8080-exec-6] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:17:04,893 [http-nio-8080-exec-5] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:17:07,591 [http-nio-8080-exec-8] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:24:01,139 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 01:24:12,839 [main] INFO  util.DbWork- start migration
+2024-12-27 01:24:13,002 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 01:24:13,136 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.077s)
+2024-12-27 01:24:13,167 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 01:24:13,173 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 01:24:13,190 [main] INFO  util.DbWork- migration done
+2024-12-27 01:24:13,190 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 01:24:14,912 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:24:27,687 [http-nio-8080-exec-9] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:24:28,803 [http-nio-8080-exec-2] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:30,342 [http-nio-8080-exec-7] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:32,073 [http-nio-8080-exec-1] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:32,721 [http-nio-8080-exec-4] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:24:33,312 [http-nio-8080-exec-9] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:33,858 [http-nio-8080-exec-3] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:39,344 [http-nio-8080-exec-6] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:47,549 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:49,821 [http-nio-8080-exec-9] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:52,884 [http-nio-8080-exec-6] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:54,206 [http-nio-8080-exec-8] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:24:57,125 [http-nio-8080-exec-5] INFO  servlet.LogoutServlet- User logout from system.
+2024-12-27 01:24:59,246 [http-nio-8080-exec-7] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:25:00,162 [http-nio-8080-exec-1] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:28:40,092 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 01:29:40,888 [main] INFO  util.DbWork- start migration
+2024-12-27 01:29:41,005 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 01:29:41,144 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.085s)
+2024-12-27 01:29:41,176 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 01:29:41,183 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 01:29:41,200 [main] INFO  util.DbWork- migration done
+2024-12-27 01:29:41,200 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 01:29:44,482 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:29:48,144 [http-nio-8080-exec-5] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:29:49,881 [http-nio-8080-exec-10] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:29:50,627 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:04,794 [http-nio-8080-exec-2] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:14,623 [http-nio-8080-exec-1] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:16,164 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:20,080 [http-nio-8080-exec-2] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:21,461 [http-nio-8080-exec-7] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:31,895 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:34,398 [http-nio-8080-exec-3] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:38,250 [http-nio-8080-exec-7] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:39,614 [http-nio-8080-exec-8] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:43,834 [http-nio-8080-exec-1] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:46,504 [http-nio-8080-exec-3] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:49,499 [http-nio-8080-exec-4] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:30:55,017 [http-nio-8080-exec-8] INFO  servlet.LogoutServlet- User logout from system.
+2024-12-27 01:30:55,991 [http-nio-8080-exec-2] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:30:59,210 [http-nio-8080-exec-6] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:32:39,289 [http-nio-8080-exec-8] INFO  servlet.RegisterServlet- Created new User with email: 12345678@12345678.abc, password: $2a$10$xmMQU6/8LIQ89bJbVKTPPOA9HoZwpJmF/nx7szVTMcEMvKai29JdS.
+2024-12-27 01:32:52,652 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:33:02,337 [http-nio-8080-exec-2] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:33:05,522 [http-nio-8080-exec-3] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:33:22,200 [http-nio-8080-exec-10] INFO  servlet.LogoutServlet- User logout from system.
+2024-12-27 01:33:25,755 [http-nio-8080-exec-6] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:34:51,658 [http-nio-8080-exec-7] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 01:35:02,259 [http-nio-8080-exec-10] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:02,928 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:07,437 [http-nio-8080-exec-2] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:08,634 [http-nio-8080-exec-7] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:12,613 [http-nio-8080-exec-2] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:35:23,409 [http-nio-8080-exec-9] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:35:27,870 [http-nio-8080-exec-8] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:35:29,381 [http-nio-8080-exec-10] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:35:30,844 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:36,587 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:39,584 [http-nio-8080-exec-9] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:35:43,627 [http-nio-8080-exec-10] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:44,237 [http-nio-8080-exec-9] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 01:35:44,689 [http-nio-8080-exec-10] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 01:35:58,234 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up

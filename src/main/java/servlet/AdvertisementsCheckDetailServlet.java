@@ -1,7 +1,8 @@
 package servlet;
 
-import dao.AdvertisementsCheckDao;
 import dao.AdvertisementsDao;
+import dao.AdvertisementsDao;
+import dao.CheckDao;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -19,12 +20,14 @@ import java.io.IOException;
 public class AdvertisementsCheckDetailServlet extends HttpServlet {
 
     final static Logger logger = LogManager.getLogger(AdvertisementsCheckDetailServlet.class);
-    private AdvertisementsCheckDao advertisementsCheckDao;
+    private AdvertisementsDao advertisementsDao;
+    private CheckDao checkDao;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        advertisementsCheckDao = (AdvertisementsCheckDao) getServletContext().getAttribute("advertisementsCheckDao");
+        advertisementsDao = (AdvertisementsDao) getServletContext().getAttribute("advertisementsDao");
+        checkDao = (CheckDao) getServletContext().getAttribute("checkDao");
     }
 
     @Override
@@ -34,9 +37,9 @@ public class AdvertisementsCheckDetailServlet extends HttpServlet {
             String action = request.getParameter("action");
 
             if ("accept".equals(action)) {
-                advertisementsCheckDao.acceptAdvertisement(advertisementId);
+                checkDao.acceptAdvertisement(advertisementId);
             } else if ("reject".equals(action)) {
-                advertisementsCheckDao.rejectAdvertisement(advertisementId);
+                checkDao.rejectAdvertisement(advertisementId);
             }
 
             response.sendRedirect("/advertisements/check?page=1");  // Перенаправляем на страницу с объявлениями
@@ -50,7 +53,7 @@ public class AdvertisementsCheckDetailServlet extends HttpServlet {
         try {
 
             int advertisementId = Integer.parseInt(request.getParameter("id"));
-            Advertisement advertisement = advertisementsCheckDao.getAdvertisementByIdForCheck(advertisementId);
+            Advertisement advertisement = advertisementsDao.getAdvertisementById(advertisementId, "рассмотрение");
             if (advertisement != null){
                 request.setAttribute("advertisement", advertisement);
                 request.getRequestDispatcher("/WEB-INF/view/adv_check/advertisementsCheckDetail.jsp").forward(request, response);

@@ -1,6 +1,7 @@
 package servlet;
 
 import dao.AdvertisementsDao;
+import dao.CreateDao;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -33,13 +34,13 @@ import java.sql.Timestamp;
 public class AdvertisementsCreateServlet extends HttpServlet {
 
     private static final Logger logger = LogManager.getLogger(AdvertisementsCreateServlet.class);
-    private AdvertisementsDao advertisementsDao;
+    private CreateDao createDao;
     private UserService userService;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        advertisementsDao = (AdvertisementsDao) getServletContext().getAttribute("advertisementsDao");
+        createDao = (CreateDao) getServletContext().getAttribute("createDao");
         userService = (UserService) getServletContext().getAttribute("userService");
     }
 
@@ -62,7 +63,7 @@ public class AdvertisementsCreateServlet extends HttpServlet {
             Advertisement advertisement = new Advertisement(title, userService.getUser(request).getId(), content, new Timestamp(System.currentTimeMillis()), imageUrl);
 
             try {
-                advertisementsDao.create(advertisement);
+                createDao.create(advertisement);
                 response.sendRedirect(request.getContextPath() + "/advertisements");
             } catch (DbException e) {
                 logger.error("Error creating advertisement", e);

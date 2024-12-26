@@ -18,14 +18,13 @@ public class Advertisement {
 
     public Advertisement(){}
 
-    public Advertisement(Integer id, Integer sender_id, String title, String content, Timestamp publishDate, String imageUrl, String status){
+    public Advertisement(Integer id, Integer sender_id, String title, String content, Timestamp publishDate, String imageUrl){
         this.id = id;
         this.sender_id = sender_id;
         this.title = title;
         this.content = content;
         this.publishDate = publishDate;
         this.imageUrl = imageUrl;
-        this.status = status;
     }
 
     public Advertisement(String title, Integer sender_id, String content, Timestamp publishDate, String imageUrl){

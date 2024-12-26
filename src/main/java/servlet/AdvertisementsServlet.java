@@ -32,9 +32,9 @@ public class AdvertisementsServlet extends HttpServlet {
             int page = Integer.parseInt(request.getParameter("page") != null ? request.getParameter("page") : "1");
             int limit = 10;
 
-            List<Advertisement> advertisementsList = advertisementsDao.getPage(page, limit);
+            List<Advertisement> advertisementsList = advertisementsDao.getPage(page, limit, "принят");
 
-            int totalAdvertisement = advertisementsDao.getCount();
+            int totalAdvertisement = advertisementsDao.getCount("принят");
             int totalPages = (int) Math.ceil(totalAdvertisement / (double) limit);
 
             request.setAttribute("advertisementsList", advertisementsList);

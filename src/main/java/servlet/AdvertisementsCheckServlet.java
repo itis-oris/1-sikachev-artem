@@ -1,6 +1,6 @@
 package servlet;
 
-import dao.AdvertisementsCheckDao;
+import dao.CheckDao;
 import dao.AdvertisementsDao;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
@@ -20,12 +20,12 @@ import java.util.List;
 public class AdvertisementsCheckServlet extends HttpServlet {
 
     final static Logger logger = LogManager.getLogger(AdvertisementsCheckServlet.class);
-    private AdvertisementsCheckDao advertisementsCheckDao;
+    private AdvertisementsDao advertisementsDao;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        advertisementsCheckDao = (AdvertisementsCheckDao) getServletContext().getAttribute("advertisementsCheckDao");
+        advertisementsDao = (AdvertisementsDao) getServletContext().getAttribute("advertisementsDao");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -33,9 +33,9 @@ public class AdvertisementsCheckServlet extends HttpServlet {
             int page = Integer.parseInt(request.getParameter("page") != null ? request.getParameter("page") : "1");
             int limit = 10;
 
-            List<Advertisement> advertisementsList = advertisementsCheckDao.getPageForCheck(page, limit);
+            List<Advertisement> advertisementsList = advertisementsDao.getPage(page, limit, "рассмотрение");
 
-            int totalAdvertisement = advertisementsCheckDao.getCount();
+            int totalAdvertisement = advertisementsDao.getCount("рассмотрение");
             int totalPages = (int) Math.ceil(totalAdvertisement / (double) limit);
 
             request.setAttribute("advertisementsList", advertisementsList);

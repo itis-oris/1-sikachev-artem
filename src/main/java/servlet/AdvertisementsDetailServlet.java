@@ -30,7 +30,7 @@ public class AdvertisementsDetailServlet extends HttpServlet {
         try {
 
             int advertisementId = Integer.parseInt(request.getParameter("id"));
-            Advertisement advertisement = advertisementsDao.getAdvertisementById(advertisementId);
+            Advertisement advertisement = advertisementsDao.getAdvertisementById(advertisementId, "принят");
             if (advertisement != null){
                 request.setAttribute("advertisement", advertisement);
                 request.getRequestDispatcher("/WEB-INF/view/advertisements/advertisementsDetail.jsp").forward(request, response);

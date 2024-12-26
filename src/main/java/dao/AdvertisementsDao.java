@@ -23,14 +23,15 @@ public class AdvertisementsDao {
     }
 
 
-    public List<Advertisement> getPage(long page, long limit) throws DbException {
+    public List<Advertisement> getPage(long page, long limit, String status) throws DbException {
         List<Advertisement> advList = new ArrayList<>();
         try (Connection connection = dbWork.getConnection()) {
-            String query = "SELECT * FROM advertisements WHERE status = 'принят' ORDER BY publish_date DESC LIMIT ? OFFSET ?";
+            String query = "SELECT * FROM advertisements WHERE status = ? ORDER BY publish_date DESC LIMIT ? OFFSET ?";
             try (PreparedStatement statement = connection.prepareStatement(query)) {
 
-                statement.setLong(1, limit);
-                statement.setLong(2, limit * (page - 1));
+                statement.setString(1, status);
+                statement.setLong(2, limit);
+                statement.setLong(3, limit * (page - 1));
 
                 ResultSet rs = statement.executeQuery();
 
@@ -41,8 +42,7 @@ public class AdvertisementsDao {
                             rs.getString("title"),
                             rs.getString("content"),
                             rs.getTimestamp("publish_date"),
-                            rs.getString("image_url"),
-                            "рассмотрение"
+                            rs.getString("image_url")
                     ));
                 }
             }
@@ -54,14 +54,15 @@ public class AdvertisementsDao {
     }
 
 
-    public Advertisement getAdvertisementById(int id) throws DbException{
+    public Advertisement getAdvertisementById(int id, String status) throws DbException{
         Advertisement adv = null;
-        String query = "SELECT * FROM advertisements WHERE id = ? AND status = 'принят'";
+        String query = "SELECT * FROM advertisements WHERE id = ? AND status = ?";
 
         try (Connection connection = dbWork.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
 
             statement.setInt(1, id);
+            statement.setString(2, status);
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
                     adv = new Advertisement();
@@ -82,12 +83,14 @@ public class AdvertisementsDao {
         return adv;
     }
 
-    public int getCount() throws DbException {
+    public int getCount(String status) throws DbException {
         int total = 0;
-        String query = "SELECT COUNT(id) FROM advertisements";
+        String query = "SELECT COUNT(id) FROM advertisements WHERE status = ?";
 
         try (Connection connection = dbWork.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
+
+            statement.setString(1, status);
 
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
