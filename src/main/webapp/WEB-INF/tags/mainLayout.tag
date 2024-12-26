@@ -11,10 +11,11 @@
     <title>${title}</title>
 
     <c:forEach var="file" items="${fn:split(cssFile, ',')}">
-      <link rel="stylesheet" href="<c:url value='/static/css/${file}.css'/>">
+      <link rel="stylesheet" href="<c:url value='/static/css/${fn:trim(file)}.css'/>">
     </c:forEach>
 
     <link rel="stylesheet" href="<c:url value='/static/css/main.css'/>">
+    <link rel="icon" href="static/img/i.ico" type="image/x-icon">
 </head>
 <body>
     <%@ include file="/WEB-INF/parts/_header.jsp" %>

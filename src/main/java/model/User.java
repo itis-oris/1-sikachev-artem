@@ -14,20 +14,24 @@ public class User {
     private String lastName;
     private String email;
     private String password;
+    private String phone_number;
+    private String place_of_living;
     private String role;
 
     public User(){}
 
-    public User(String userName, String role, String firstName, String lastName, String email, String password) {
+    public User(String userName, String role, String firstName, String lastName, String email, String password, String phone_number, String place_of_living) {
         this.userName = userName;
         this.role = role;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.phone_number = phone_number;
+        this.place_of_living = place_of_living;
     }
 
-    public User(Integer id, String userName, String role, String firstName, String lastName, String email, String password) {
+    public User(Integer id, String userName, String role, String firstName, String lastName, String email, String password, String phone_number, String place_of_living) {
         this.id = id;
         this.userName = userName;
         this.role = role;
@@ -35,6 +39,8 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.password = password;
+        this.phone_number = phone_number;
+        this.place_of_living = place_of_living;
     }
 
     @Override

@@ -1,0 +1,55 @@
+/* Карточка с формой */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Заголовок карточки */
+.card h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Ввод в форме */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Стиль для кнопки */
+button {
+    background-color: #ffcd82;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffb34d;
+}
+
+/* Стиль для уведомлений об ошибке */
+.error-message {
+    color: red;
+    font-size: 14px;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none;
+}
+
+.reg-link:hover {
+    text-decoration: underline;
+}

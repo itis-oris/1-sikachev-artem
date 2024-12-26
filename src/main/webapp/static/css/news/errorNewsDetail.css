@@ -21,7 +21,7 @@
     margin: 20px 0;
 }
 
-.error-container .back-to-home {
+.error-container .back-to-news {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -31,6 +31,6 @@
     border-radius: 5px;
 }
 
-.error-container .back-to-home:hover {
+.error-container .back-to-news:hover {
     background-color: #f1a3a8;
 }

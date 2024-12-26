@@ -3,8 +3,15 @@
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<t:mainLayout title="News" cssFile="news">
-  <h1 class="header">Важные объявления</h1>
+<t:mainLayout title="News" cssFile="news/news">
+  <h1 class="header">News</h1>
+
+  <c:if test="${not empty user and user.role == 'ADMIN'}">
+    <div class="add-news">
+      <a href="/news/create" class="btn-add-news">Добавить новое объявление</a>
+    </div>
+  </c:if>
+
   <div class="news-container">
     <c:forEach var="news" items="${newsList}">
       <div class="news-card">
@@ -12,7 +19,7 @@
           <a href="news?id=${news.id}">${news.title}</a>
         </h3>
         <p><strong>Published on: </strong>${news.publishDate}</p>
-        <p><img class="news-image" src="images/${news.imageUrl}" alt="Image" /></p>
+        <p><img class="news-image" src="/images/${news.imageUrl}" alt="Image" /></p>
         <p>${news.content}</p>
       </div>
     </c:forEach>

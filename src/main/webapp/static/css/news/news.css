@@ -83,3 +83,22 @@
     color: white;
     border-radius: 5px;
 }
+
+
+.add-news {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-add-news {
+  background-color: #ffcd82;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.btn-add-news:hover {
+  background-color: #ffb64d;
+}

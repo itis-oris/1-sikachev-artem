@@ -36,7 +36,7 @@ public class NewsDetailServlet extends HttpServlet {
                 request.getRequestDispatcher("/WEB-INF/view/news/newsDetail.jsp").forward(request, response);
             } else {
                 request.setAttribute("errorMessage", "Sorry, the news you are looking for does not exist.");
-                request.getRequestDispatcher("/WEB-INF/exceptions/errorPage.jsp").forward(request, response);
+                request.getRequestDispatcher("/WEB-INF/exceptions/errorNewsDetail.jsp").forward(request, response);
             }
 
         } catch (ServletException e){

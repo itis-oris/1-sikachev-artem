@@ -122,3 +122,8 @@ button {
 button:focus {
     outline: none;
 }
+
+.nav-block-part-img {
+  margin-left: 13px;
+  margin-top: 13px
+}

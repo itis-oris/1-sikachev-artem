@@ -1,0 +1,107 @@
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="file"], textarea {
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="file"]:focus, textarea:focus {
+    border-color: #ffcd82;
+    outline: none;
+    background-color: #fff;
+}
+
+/* Стили для кнопки отправки */
+button[type="submit"] {
+    background-color: #ffcd82;
+    color: #333;
+    font-size: 1.2em;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffb64d;
+}
+
+button[type="submit"]:active {
+    background-color: #f0a500;
+}
+
+/* Стили для изображений */
+input[type="file"] {
+    padding: 8px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    font-size: 1em;
+    padding: 12px;
+    resize: vertical;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #ffcd82;
+    background-color: #fff;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        font-size: 2em;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1em;
+    }
+}

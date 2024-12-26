@@ -1,5 +1,6 @@
 package dao;
 
+import model.Advertisement;
 import model.News;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -102,5 +103,23 @@ public class NewsDao {
         }
 
         return total;
+    }
+
+    public void create(News news) throws DbException {
+        String query = "INSERT INTO news (title, content, publish_date, image_url) VALUES (?, ?, ?, ?)";
+
+        try (Connection connection = dbWork.getConnection();
+             PreparedStatement statement = connection.prepareStatement(query)) {
+
+            statement.setString(1, news.getTitle());
+            statement.setString(2, news.getContent());
+            statement.setTimestamp(3, news.getPublishDate());
+            statement.setString(4, news.getImageUrl());
+
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            logger.error("Error creating news", e);
+            throw new DbException("Can't create news", e);
+        }
     }
 }

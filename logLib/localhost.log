@@ -1,0 +1,85 @@
+2024-12-27 00:09:20,034 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:09:31,704 [main] INFO  util.DbWork- start migration
+2024-12-27 00:09:31,835 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:09:31,984 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.093s)
+2024-12-27 00:09:32,017 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:09:32,022 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:09:32,042 [main] INFO  util.DbWork- migration done
+2024-12-27 00:09:32,042 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:09:49,818 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:10:18,790 [http-nio-8080-exec-4] INFO  servlet.RegisterServlet- Во время регистрации дублирующий пароль не совпал.
+2024-12-27 00:12:17,087 [http-nio-8080-exec-3] INFO  servlet.RegisterServlet- Created new User with email: bogdandiadya@yandex.ru, password: $2a$10$L0qDfAWG2brTmHR/ZxSndurcLRvFo4Bs0aLoz8W59GBVceNr8RQIi.
+2024-12-27 00:12:22,170 [http-nio-8080-exec-5] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:18:30,661 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:18:42,060 [main] INFO  util.DbWork- start migration
+2024-12-27 00:18:42,198 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:18:42,339 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.085s)
+2024-12-27 00:18:42,375 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:18:42,381 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:18:42,400 [main] INFO  util.DbWork- migration done
+2024-12-27 00:18:42,400 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:18:44,219 [http-nio-8080-exec-1] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:18:52,547 [http-nio-8080-exec-7] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 00:19:28,795 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:19:38,096 [main] INFO  util.DbWork- start migration
+2024-12-27 00:19:38,273 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:19:38,411 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.083s)
+2024-12-27 00:19:38,450 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:19:38,457 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:19:38,484 [main] INFO  util.DbWork- migration done
+2024-12-27 00:19:38,484 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:20:09,742 [http-nio-8080-exec-1] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 00:24:47,424 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:24:55,918 [main] INFO  util.DbWork- start migration
+2024-12-27 00:24:56,068 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:24:56,202 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.077s)
+2024-12-27 00:24:56,232 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:24:56,239 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:24:56,261 [main] INFO  util.DbWork- migration done
+2024-12-27 00:24:56,261 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:25:02,003 [http-nio-8080-exec-2] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:25:11,185 [http-nio-8080-exec-7] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 00:25:35,127 [http-nio-8080-exec-3] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 00:27:26,785 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:27:37,836 [main] INFO  util.DbWork- start migration
+2024-12-27 00:27:37,974 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:27:38,119 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.083s)
+2024-12-27 00:27:38,151 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:27:38,157 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:27:38,174 [main] INFO  util.DbWork- migration done
+2024-12-27 00:27:38,174 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:28:03,518 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:28:12,459 [main] INFO  util.DbWork- start migration
+2024-12-27 00:28:12,588 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:28:12,738 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.094s)
+2024-12-27 00:28:12,775 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:28:12,782 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:28:12,804 [main] INFO  util.DbWork- migration done
+2024-12-27 00:28:12,804 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:28:17,704 [http-nio-8080-exec-2] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 00:28:23,525 [http-nio-8080-exec-3] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 00:28:27,400 [http-nio-8080-exec-4] INFO  servlet.LoginServlet- Неудачная попытка авторизации
+2024-12-27 00:28:41,418 [http-nio-8080-exec-2] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:28:46,878 [http-nio-8080-exec-4] INFO  dao.AdvertisementsCheckDao- Get the count of advertisements - correct
+2024-12-27 00:28:50,684 [http-nio-8080-exec-8] INFO  dao.AdvertisementsCheckDao- Get the count of advertisements - correct
+2024-12-27 00:29:17,442 [http-nio-8080-exec-7] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:29:28,028 [http-nio-8080-exec-4] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:29:32,302 [http-nio-8080-exec-8] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 00:29:40,892 [http-nio-8080-exec-4] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 00:29:43,404 [http-nio-8080-exec-5] INFO  dao.AdvertisementsCheckDao- Get the count of advertisements - correct
+2024-12-27 00:29:47,332 [http-nio-8080-exec-5] INFO  dao.AdvertisementsCheckDao- Get the count of advertisements - correct
+2024-12-27 00:29:49,040 [http-nio-8080-exec-2] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 00:30:13,887 [http-nio-8080-exec-10] INFO  servlet.LogoutServlet- User logout from system.
+2024-12-27 00:30:31,024 [http-nio-8080-exec-5] INFO  dao.AdvertisementsCheckDao- Get the count of advertisements - correct
+2024-12-27 00:30:33,860 [http-nio-8080-exec-10] INFO  dao.AdvertisementsDao- Get the count of advertisements - correct
+2024-12-27 00:30:37,047 [http-nio-8080-exec-6] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:30:38,435 [http-nio-8080-exec-9] INFO  dao.NewsDao- Get the count of news - correct
+2024-12-27 00:34:29,168 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up
+2024-12-27 00:37:09,739 [main] INFO  util.DbWork- start migration
+2024-12-27 00:37:09,893 [main] INFO  org.flywaydb.core.FlywayExecutor- Database: jdbc:postgresql://localhost:5432/sem_one (PostgreSQL 16.3)
+2024-12-27 00:37:10,037 [main] INFO  org.flywaydb.core.internal.command.DbValidate- Successfully validated 5 migrations (execution time 00:00.087s)
+2024-12-27 00:37:10,077 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Current version of schema "public": 6
+2024-12-27 00:37:10,084 [main] INFO  org.flywaydb.core.internal.command.DbMigrate- Schema "public" is up to date. No migration necessary.
+2024-12-27 00:37:10,108 [main] INFO  util.DbWork- migration done
+2024-12-27 00:37:10,108 [main] INFO  listener.ContextListener- contextInitialized
+2024-12-27 00:37:20,571 [Thread-1] INFO  listener.ContextListener- contextDestroyed: Resources have been cleaned up

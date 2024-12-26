@@ -1,0 +1,63 @@
+.advertisement-detail-container {
+    margin: 50px auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.advertisement-publish-date {
+    font-size: 1.1em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.advertisement-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.advertisement-detail-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.advertisement-content {
+    color: #555;
+    line-height: 1.8;
+}
+
+.btn-accept, .btn-reject {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.btn-accept {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-accept:hover {
+    background-color: #45a049;
+}
+
+.btn-reject {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-reject:hover {
+    background-color: #e53935;
+}
