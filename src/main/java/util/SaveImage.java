@@ -8,10 +8,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class SaveImage {
-    public static String saveImage(Part imagePart) throws IOException {
+    public static String saveImage(Part imagePart, String imageDir) throws IOException {
         String imageName = imagePart.getSubmittedFileName();
 
-        File uploadDir = new File("D:\\Semestr_Work_One\\images");
+        File uploadDir = new File(imageDir);
 
         String imagePath = uploadDir.getAbsolutePath() + File.separator + imageName;
         File imageFile = new File(imagePath);

@@ -1,6 +1,5 @@
 package dao;
 
-import model.Advertisement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import util.DbException;
@@ -8,10 +7,7 @@ import util.DbWork;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CheckDao {
     final static Logger logger = LogManager.getLogger(CheckDao.class);

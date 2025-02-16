@@ -1,7 +1,6 @@
 package servlet;
 
 import dao.AdvertisementsDao;
-import dao.AdvertisementsDao;
 import dao.CheckDao;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;

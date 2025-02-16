@@ -8,7 +8,7 @@
 
   <c:if test="${not empty user and user.role == 'ADMIN'}">
     <div class="add-news">
-      <a href="/news/create" class="btn-add-news">Добавить новое объявление</a>
+      <a href="/news/create" class="btn-add-news">Добавить новую новость</a>
     </div>
   </c:if>
 

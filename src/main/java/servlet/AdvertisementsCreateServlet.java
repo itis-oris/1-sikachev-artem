@@ -1,7 +1,6 @@
 package servlet;
 
 import dao.AdvertisementsDao;
-import dao.CreateDao;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -17,16 +16,12 @@ import service.UserService;
 import util.DbException;
 import util.SaveImage;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.sql.Timestamp;
 
 
 @WebServlet("/advertisements/create")
 @MultipartConfig(
-        location = "D:\\Semestr_Work_One\\images",
         fileSizeThreshold = 1024 * 1024,
         maxFileSize = 1024 * 1024 * 5,
         maxRequestSize = 1024 * 1024 * 10
@@ -34,14 +29,22 @@ import java.sql.Timestamp;
 public class AdvertisementsCreateServlet extends HttpServlet {
 
     private static final Logger logger = LogManager.getLogger(AdvertisementsCreateServlet.class);
-    private CreateDao createDao;
+    private AdvertisementsDao advertisementsDao;
     private UserService userService;
+    private String imageDirectory;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        createDao = (CreateDao) getServletContext().getAttribute("createDao");
+        advertisementsDao = (AdvertisementsDao) getServletContext().getAttribute("advertisementsDao");
         userService = (UserService) getServletContext().getAttribute("userService");
+
+        imageDirectory = getServletContext().getInitParameter("imageDirectory");
+
+        // Если путь не задан, используем значение по умолчанию
+        if (imageDirectory == null || imageDirectory.isEmpty()) {
+            imageDirectory = System.getProperty("user.dir") + "/images"; // Используем текущую директорию
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -58,12 +61,13 @@ public class AdvertisementsCreateServlet extends HttpServlet {
             String content = request.getParameter("content");
 
             Part imagePart = request.getPart("image");
-            String imageUrl = SaveImage.saveImage(imagePart);
+            String imageUrl = SaveImage.saveImage(imagePart, imageDirectory);
 
-            Advertisement advertisement = new Advertisement(title, userService.getUser(request).getId(), content, new Timestamp(System.currentTimeMillis()), imageUrl);
+            Advertisement advertisement = new Advertisement(title, userService.getUser(request).getId(),
+                    content, new Timestamp(System.currentTimeMillis()), imageUrl);
 
             try {
-                createDao.create(advertisement);
+                advertisementsDao.create(advertisement);
                 response.sendRedirect(request.getContextPath() + "/advertisements");
             } catch (DbException e) {
                 logger.error("Error creating advertisement", e);

@@ -1,6 +1,5 @@
 package servlet;
 
-import dao.NewsDao;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

@@ -1,6 +1,5 @@
 package dao;
 
-import model.Advertisement;
 import model.News;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -10,7 +10,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import service.AdminService;
-import service.UserService;
 
 import java.io.IOException;
 

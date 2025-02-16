@@ -5,7 +5,6 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.flywaydb.core.Flyway;
-import org.flywaydb.core.api.FlywayException;
 
 import java.sql.Connection;
 import java.sql.SQLException;

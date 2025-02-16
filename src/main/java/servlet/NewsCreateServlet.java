@@ -21,7 +21,6 @@ import java.sql.Timestamp;
 
 @WebServlet("/news/create")
 @MultipartConfig(
-        location = "D:\\Semestr_Work_One\\images",
         fileSizeThreshold = 1024 * 1024,
         maxFileSize = 1024 * 1024 * 5,
         maxRequestSize = 1024 * 1024 * 10
@@ -31,12 +30,20 @@ public class NewsCreateServlet extends HttpServlet {
     private static final Logger logger = LogManager.getLogger(NewsCreateServlet.class);
     private NewsDao newsDao;
     private UserService userService;
+    private String imageDirectory;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
         newsDao = (NewsDao) getServletContext().getAttribute("newsDao");
         userService = (UserService) getServletContext().getAttribute("userService");
+
+        imageDirectory = getServletContext().getInitParameter("imageDirectory");
+
+        // Если путь не задан, используем значение по умолчанию
+        if (imageDirectory == null || imageDirectory.isEmpty()) {
+            imageDirectory = System.getProperty("user.dir") + "/images"; // Используем текущую директорию
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -53,7 +60,7 @@ public class NewsCreateServlet extends HttpServlet {
             String content = request.getParameter("content");
 
             Part imagePart = request.getPart("image");
-            String imageUrl = SaveImage.saveImage(imagePart);
+            String imageUrl = SaveImage.saveImage(imagePart, imageDirectory);
 
             News news = new News(title, content, new Timestamp(System.currentTimeMillis()), imageUrl);
 

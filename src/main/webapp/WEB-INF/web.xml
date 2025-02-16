@@ -17,4 +17,9 @@
         </multipart-config>
     </servlet>
 
+    <context-param>
+        <param-name>imageDirectory</param-name>
+        <param-value>C:\\my_programs\\Semestr_Work_One\\images</param-value>
+    </context-param>
+
 </web-app>

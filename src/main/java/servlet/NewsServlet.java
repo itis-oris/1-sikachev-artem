@@ -2,7 +2,6 @@ package servlet;
 
 import dao.NewsDao;
 import jakarta.servlet.ServletConfig;
-import jakarta.servlet.ServletConnection;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -14,7 +13,6 @@ import org.apache.logging.log4j.Logger;
 import util.DbException;
 
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet("")

@@ -8,11 +8,37 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.*;
 
-import static org.apache.logging.log4j.web.WebLoggerContextUtils.getServletContext;
-
 @WebServlet("/images/*")
 public class ImageServlet extends HttpServlet {
-    private static final String IMAGE_DIR = "D:\\Semestr_Work_One\\images";
+    private String IMAGE_DIR;
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+        // Получаем путь из параметра контекста
+        IMAGE_DIR = getServletContext().getInitParameter("imageDirectory");
+        System.out.println(IMAGE_DIR);
+
+        // Если параметр не задан, проверяем переменную окружения
+        if (IMAGE_DIR == null || IMAGE_DIR.trim().isEmpty()) {
+            IMAGE_DIR = System.getenv("IMAGE_DIR");
+        }
+
+        // Если всё ещё не задан, используем путь внутри приложения
+        if (IMAGE_DIR == null || IMAGE_DIR.trim().isEmpty()) {
+            String appPath = getServletContext().getRealPath("");
+            if (appPath != null) {
+                IMAGE_DIR = appPath + File.separator + "images";
+            } else {
+                throw new ServletException("Не удалось определить путь к папке изображений");
+            }
+        }
+
+        File imageDir = new File(IMAGE_DIR);
+        if (!imageDir.exists()) {
+            imageDir.mkdirs();
+        }
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
